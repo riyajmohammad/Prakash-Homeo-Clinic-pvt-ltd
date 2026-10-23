@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5faf8">
+  <meta name="description" content="Request an appointment with Dr. Vinay Vishwakarma at Prakash Homoeo Clinic, Bakshi Ka Talab, Lucknow. Send your preferred date and time directly via WhatsApp.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Book an Appointment | Prakash Homoeo Clinic">
+  <meta property="og:description" content="Choose a preferred consultation date and time and send your appointment request to our clinic on WhatsApp.">
+  <title>Book an Appointment | Prakash Homoeo Clinic, Lucknow</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Noto+Sans+Devanagari:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="logo.jpeg" type="image/jpeg">
+</head>
+<body class="appointment-page">
+  <div class="topbar">
+    <div class="container topbar-inner">
+      <p><span class="topbar-dot"></span> Need help? Call the clinic</p>
+      <a href="tel:+917651983263"><strong>+91 76519 83263</strong></a>
+    </div>
+  </div>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a class="brand" href="index.html" aria-label="Prakash Homoeo Clinic home">
+        <img src="logo.jpeg" alt="Prakash Homeo Clinic logo" width="60" height="60">
+        <span class="brand-copy"><strong>Prakash Homoeo</strong><small>Agencies &amp; Clinic</small></span>
+      </a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="main-nav" id="primary-nav" aria-label="Main navigation">
+        <a href="index.html">Home</a>
+        <a href="index.html#about">About doctor</a>
+        <a href="index.html#care">Care areas</a>
+        <a href="index.html#visit">Visit us</a>
+        <a class="nav-cta active-cta" href="appointment.html">Book appointment <span aria-hidden="true">↗</span></a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="booking-hero">
+      <div class="container booking-layout">
+        <div class="booking-intro">
+          <a class="back-link" href="index.html"><span aria-hidden="true">←</span> Back to clinic</a>
+          <div class="eyebrow"><span class="eyebrow-line"></span> APPOINTMENTS</div>
+          <h1>A little time<br>for <span>your wellbeing.</span></h1>
+          <p>Tell us what works for you. Your request will open in WhatsApp, ready to send to our clinic team.</p>
+          <div class="booking-doctor">
+            <img src="pic-2.jpeg" alt="Dr. Vinay Vishwakarma" loading="lazy">
+            <span><strong>Dr. Vinay Vishwakarma</strong><small>Homeopathic physician &amp; sexologist · 10+ years</small></span>
+          </div>
+          <div class="booking-hours">
+            <span aria-hidden="true">◷</span>
+            <span><strong>Consultation hours</strong><small>Every day · 2:00 PM – 7:00 PM</small></span>
+          </div>
+          <p class="booking-privacy">Your details are used only to help arrange your appointment. Please avoid sharing sensitive medical information in this form.</p>
+        </div>
+        <div class="booking-card">
+          <div class="booking-card-heading">
+            <div><span class="eyebrow"><span class="eyebrow-line"></span> REQUEST A VISIT</span><h2>Appointment details</h2></div>
+            <span class="whatsapp-mark" aria-label="WhatsApp">✆</span>
+          </div>
+          <form id="appointment-form">
+            <label for="patient-name">Your name <span>*</span></label>
+            <input id="patient-name" name="name" type="text" placeholder="e.g. Ananya Sharma" autocomplete="name" required maxlength="80">
+
+            <label for="patient-mobile">Mobile number <span>*</span></label>
+            <div class="input-with-prefix"><span aria-hidden="true">+91</span><input id="patient-mobile" name="mobile" type="tel" placeholder="10-digit mobile number" autocomplete="tel-national" inputmode="numeric" pattern="[0-9]{10}" minlength="10" maxlength="10" aria-describedby="mobile-help" required></div>
+            <small class="field-hint" id="mobile-help">Enter a 10-digit Indian mobile number.</small>
+
+            <label for="patient-concern">What would you like to consult about? <span>*</span></label>
+            <input id="patient-concern" name="concern" type="text" placeholder="Your reason for visit" required maxlength="120">
+
+            <div class="form-row">
+              <div><label for="appointment-date">Preferred date <span>*</span></label><input id="appointment-date" name="date" type="date" required></div>
+              <div><label for="appointment-time">Preferred time <span>*</span></label>
+                <select id="appointment-time" name="time" required>
+                  <option value="" selected disabled>Select a time</option>
+                  <option>2:00 PM</option><option>2:30 PM</option><option>3:00 PM</option><option>3:30 PM</option>
+                  <option>4:00 PM</option><option>4:30 PM</option><option>5:00 PM</option><option>5:30 PM</option>
+                  <option>6:00 PM</option><option>6:30 PM</option><option>7:00 PM</option>
+                </select>
+              </div>
+            </div>
+            <button class="button button-primary submit-button" type="submit">Continue to WhatsApp <span aria-hidden="true">↗</span></button>
+            <p class="form-terms">Your appointment is a request and will be confirmed by the clinic on WhatsApp. Consultation is available daily from 2:00 PM to 7:00 PM.</p>
+            <p id="form-error" class="form-error" role="alert" hidden></p>
+          </form>
+        </div>
+      </div>
+    </section>
+    <section class="booking-bottom">
+      <div class="container booking-bottom-inner"><span>Rather call?</span><a href="tel:+917651983263">+91 76519 83263</a><span class="booking-bottom-divider">·</span><span>Clinic open daily, 9:30 AM – 9:30 PM</span></div>
+    </section>
+  </main>
+  <footer class="site-footer">
+    <div class="container footer-bottom"><span>© <span id="current-year">2026</span> Prakash Homoeo Agencies &amp; Clinic</span><a href="index.html">Back to home</a></div>
+  </footer>
+  <script src="script.js" defer></script>
+</body>
+</html>
